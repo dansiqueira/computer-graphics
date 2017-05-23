@@ -1,10 +1,14 @@
 QT += opengl core gui
 
 HEADERS += \
-    glwidget.h
+    glwidget.h \
+    square.h \
+    figure.h
 
 SOURCES += \
     glwidget.cpp \
-    main.cpp
+    main.cpp \
+    square.cpp \
+    figure.cpp
 
 OTHER_FILES +=

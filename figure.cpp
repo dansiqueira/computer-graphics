@@ -3,3 +3,7 @@
 Figure::Figure()
 {
 }
+
+void Figure::draw() const
+{
+}

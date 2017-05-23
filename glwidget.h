@@ -2,7 +2,8 @@
 #define GLWIDGET_H
 
 #include <QtOpenGL/QGLWidget>
-//#include <QGLShaderProgram>
+
+class Figure;
 
 class QShortcut;
 
@@ -21,11 +22,10 @@ protected:
     void updateGL();
 
 private:
-//    QMatrix4x4 pMatrix; // matriz de projeção
-//    QGLShaderProgram shader;
-//    QVector<QVector3D> vertices;
     QShortcut *esc;
     QShortcut *altEnter;
+    QList<Figure*> scene;
+    QList<Figure*>::iterator it;
 
 signals:
 
